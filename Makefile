@@ -2,7 +2,8 @@
 
 CC=clang
 CFLAGS=-I. -g -Wall
-OBJS=lab02.o
+OBJS=lab02.o main.o
+DEPS=lab02.h
 TARGET=lab02
 
 all: $(TARGET)

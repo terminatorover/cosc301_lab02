@@ -2,10 +2,9 @@ COSC 301: Operating Systems - Lab 2
 ===================================
 
 For this lab, you will get some more practice with C by writing 3 different
-functions.  There is some template code supplied in this repo to help get you started.
+functions.  There is some template code supplied in this repo to help get you started, and for testing your functions.
 
-When you're finished, you should demo your code to me, with evidence (via
-some test cases) that your code behaves correctly.
+When you're finished, you should demo your code to me.
 
 -----
 
@@ -21,7 +20,7 @@ some test cases) that your code behaves correctly.
         unsigned char shoe_size;
     }; 
 
-Write a ``search_by_name`` function that takes an array of ``struct record``, the length of the array, a string to search for, and an index in the array to start the search from and returns the first index in the array in which the name in the record includes the search string.  The string match should be done in a case-insensitive way.
+Write a ``search_by_name`` function that takes an array of ``struct record``, the length of the array, a string to search for, and an index in the array to start the search from.  The function should return the first index in the array in which the name in the record includes the search string (anywhere in the string), or -1 if there is no match found.  The string match should be done in a case-insensitive way (see the man page for ``strncasecmp``).
 
 The function header should just be::
 
