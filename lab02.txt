@@ -9,7 +9,7 @@ When you're finished, you should demo your code to me.
 -----
 
 
-1. Write a C function called ``string_in`` that takes two ``char *`` as arguments.  If the second string is contained within the first string, the function should return the address at which the contained string begins.  The match should be done in a case-insensitive way.  For example, ``string_in("hats!", "AT")`` should return the address of ``'a'`` in ``"hats!"``. If the second string is not contained within the first string, the function should just return ``NULL``.
+1. Write a C function called ``string_in`` that takes two ``char *`` as arguments.  If the second string is contained within the first string, the function should return the address at which the contained string begins.  The match should be done in a case-insensitive way.  For example, ``string_in("hats!", "AT")`` should return the address of ``'a'`` in ``"hats!"``. If the second string is not contained within the first string, the function should just return ``NULL``.  For this problem, you cannot use the built-in ``strcasestr`` function (since you are basically reimplementing it).  You can, however, use any other built-in function.  In particular, ``strncasecmp`` may be helpful.
 
 
 2. Assume that you have the following struct declaration::
@@ -20,7 +20,7 @@ When you're finished, you should demo your code to me.
         unsigned char shoe_size;
     }; 
 
-Write a ``search_by_name`` function that takes an array of ``struct record``, the length of the array, a string to search for, and an index in the array to start the search from.  The function should return the first index in the array in which the name in the record includes the search string (anywhere in the string), or -1 if there is no match found.  The string match should be done in a case-insensitive way (see the man page for ``strcasestr`` and/or ``strncasecmp``).
+Write a ``search_by_name`` function that takes an array of ``struct record``, the length of the array, a string to search for, and an index in the array to start the search from.  The function should return the first index in the array in which the name in the record includes the search string (anywhere in the string), or -1 if there is no match found.  The string match should be done in a case-insensitive way.  You can use your ``string_in`` function from problem 1, but you cannot use ``strcasestr`` or ``strncasecmp`` or similar functions for this problem.
 
 The function header should just be::
 
