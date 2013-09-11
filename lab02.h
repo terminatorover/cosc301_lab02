@@ -3,8 +3,6 @@
 
 #include <string.h>
 
-char *string_in(const char *, const char *);
-
 struct record {
     char name[128];
     unsigned char age;
