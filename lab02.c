@@ -6,7 +6,7 @@
 #include <ctype.h>
 
 #include "lab02.h"
-
+//At least we got a seclecton to start with
 
 /*
  * Problem 1
